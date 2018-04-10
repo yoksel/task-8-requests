@@ -8,8 +8,8 @@ const listElem = document.querySelector('.list');
 const itemTmpl = document.getElementById('tmpl-item').innerHTML;
 
 requestUrl
-    .get('https://jsonplaceholder.typicode.com/comments', onResolve, onReject)
     .get('https://jsonplaceholder.typicode.com/photos', onResolve, onReject)
+    .get('https://jsonplaceholder.typicode.com/comments', onResolve, onReject)
     .get('https://jsonplaceholder.typicode.com/users', onResolve, onReject);
 
 let counter = 0;
