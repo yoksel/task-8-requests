@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Библиотека для обработки запросов</title>
+        <meta name="robots" content="noindex">
+    </head>
+    <body>
+        <div class="wrapper">
+            <h1>Библиотека для обработки запросов</h1>
+
+            <h2>Запрос</h2>
+
+<pre><code>requestUrl
+    .get(
+        'https://jsonplaceholder.typicode.com/photos',
+        onResolve,
+        onReject
+    )
+    .get(
+        'https://jsonplaceholder.typicode.com/comments',
+        onResolve,
+        onReject
+    )
+    .get(
+        'https://jsonplaceholder.typicode.com/users',
+        onResolve,
+        onReject
+    );
+</code></pre>
+
+            <h2>Результат</h2>
+
+            <ul class="list"></ul>
+        </div>
+
+        <template id="tmpl-item">
+            <p>Получен список длиной {{count}} с <a href="{{url}}">{{urlName}}</a></p>
+
+            <b>Первый элемент списка:</b>
+            <pre><code>{{first}}</code></pre>
+        </template>
+    </body>
+</html>

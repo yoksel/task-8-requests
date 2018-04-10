@@ -1,0 +1,21 @@
+BODY {
+    margin: 0;
+    padding: 1em;
+    font: 16px/1.75 Trebuchet Ms, Arial, sans-serif;
+    color: black;
+}
+
+PRE {
+    padding: 1em;
+    background: #DDD;
+    border: 1px solid #CCC;
+    border-radius: 10px;
+    white-space: pre-wrap;
+    font-size: .9em;
+}
+
+.wrapper {
+    width: 50%;
+    min-width: 600px;
+    margin: auto;
+}
